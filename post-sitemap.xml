@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/article/test-code/</loc>
+        <lastmod>2019-11-27T14:18:27.549Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/article/hexo-theme-huweihuang/</loc>
         <lastmod>2019-11-27T14:10:01.258Z</lastmod>
         <changefreq>weekly</changefreq>
