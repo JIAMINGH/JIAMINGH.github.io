@@ -18,7 +18,7 @@
         
     </title>
 
-    <link rel="canonical" href="http://yoursite.com/">
+    <link rel="canonical" href="http://yoursite.com/archives/2019/12/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -71,8 +71,8 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('/img/header_img/title.jpg') 
-            /*config*/
+            background-image: url('/img/header_img/archives-widget.jpg')
+            /*page*/
         
     }
     
@@ -206,88 +206,81 @@
                 post-container
             ">
             
-                <!-- Main Content -->
-
-
-<div class="post-preview">
-
-    <a href="/article/myblog1/">
-        <h2 class="post-title">
-                                 
-            第一次搭建个人博客
-        </h2>
-        <h3 class="post-subtitle">
-            以后会在这里发一些技术帖或个人感想
-        </h3>
-        <div class="post-content-preview">
+                
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 archive">
+            <!-- 归档列表 -->
             
-第一次搭建博客，比较简陋，大部分是借鉴别人的！
+            
 
-起源
-之前我在B站上看到一个UP主，自己搭了一个博客，看着挺有趣的，而且还可以把自己做的小项目或者一些感想记录下来，觉的挺不错的，于是就想自己也搭建一个玩一玩。
-不知道
-写点啥
-就随便
-写一写
-测试下
-代码
-！
-...
+             <!-- 归档列表 -->
+
+            
+            <div class="one-tag-list">
+                <span class="fa fa-calendar-times-o listing-seperator" id="2019">
+                    <span class="tag-text">2019</span>
+                </span>
+                <ul>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <li >
+                    12-01
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <a href="/article/mybolg2/" style="color: #0085a1">
+                        <span>
+                            第一次搭建个人博客
+                        </span>
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </li>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <li >
+                    11-27
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <a href="/article/myblog1/" style="color: #0085a1">
+                        <span>
+                            第一次搭建个人博客
+                        </span>
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </li>
+                
+                </ul>
+            </div>
+            
+
+
         </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by 贾明晖 on
-            2019-11-27
-        </p>
-        <div class="tags">
-            
-              <a href="/tags/#Hexo" title="Hexo">Hexo</a>
-            
-        </div>
-    
-
+    </div>
 </div>
-<hr>
 
-<div class="post-preview">
+<style type="text/css">
 
-    <a href="/article/mybolg2/">
-        <h2 class="post-title">
-                                 
-            第一次搭建个人博客
-        </h2>
-        <h3 class="post-subtitle">
-            以后会在这里发一些技术帖或个人感想
-        </h3>
-        <div class="post-content-preview">
-            ...
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by 贾明晖 on
-            2019-12-01
-        </p>
-        <div class="tags">
-            
-              <a href="/tags/#技术" title="技术">技术</a>
-            
-        </div>
-    
+   @media (min-width: 992px) {
+   .archive {
+       margin-left: 8.33333333%;
+       padding-right: 26.333333%;
+   }
+}
+</style>
 
-</div>
-<hr>
-
-
-
-<!-- Pager -->
-
-<ul class="pager">
-    
-    
-</ul>
-
+<style type="text/css">
+   @media (min-width: 1200px){
+   .archive {
+   margin-left: 16.66666667%;
+   padding-right: 16.666667%;
+   }
+}
+</style>
 
 
                 <br>
