@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/article/hexo_1/</loc>
+        <lastmod>2020-11-25T02:36:04.833Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/article/myblog1/</loc>
         <lastmod>2019-12-08T13:53:24.791Z</lastmod>
         <changefreq>weekly</changefreq>
