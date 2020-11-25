@@ -219,9 +219,44 @@
 <p>如果想要把hexo挂在git上，那就需要在本地上传和更新自己的github仓库，也需要git bash的命令窗口。<br>
 Windows环境直接在git官网下载安装。<br>
 Linux环境</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git  </span><br></pre></td></tr></table></figure>  
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git  </span><br></pre></td></tr></table></figure>
 <p>首先在需要输入自己的github用户名以及github邮箱</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;  </span><br><span class="line">git config --global user.email &quot;youremail&quot;  </span><br></pre></td></tr></table></figure>
+<p>可以用以下两条，检查一下上诉有没有输入对。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name  </span><br><span class="line">git config user.email  </span><br></pre></td></tr></table></figure>
+<p>用户名和邮箱正确之后，需要在本地电脑生成一个key，这样每次登录github就不用输入密码，而且也很安全。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
+<p>输入上诉命令之后，会在用户的目录下生成一个&gt;.ssh 文件夹，里面有两个密钥，后缀是&gt;.pub 的是公钥，需要把公钥中的文字复制到github账号中的设置中去，另外一个是本地私钥，需要自己电脑保留。<br>
+下面登录到自己的github。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<h2 id="安装nodejs">安装nodeJS</h2>
+<p>Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具。<br>
+windows：nodejs选择LTS版本就行了。<br>
+Linux：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nodejs</span><br><span class="line">sudo apt-get install npm</span><br></pre></td></tr></table></figure>
+<p>nodeJS选择版本为V12，太高级的版本hexo可能不支持。<br>
+如果与自己使用的nodeJS版本冲突，则可以安装nvm，进行nodeJS本版管理。</p>
+<blockquote>
+<p>Usage:<br>
+nvm arch                     : Show if node is running in 32 or 64 bit mode.<br>
+nvm install <version> [arch] : The version can be a node.js version or “latest” for the latest stable version.<br>
+Optionally specify whether to install the 32 or 64 bit version (defaults to system arch).<br>
+Set [arch] to “all” to install 32 AND 64 bit versions.<br>
+Add --insecure to the end of this command to bypass SSL validation of the remote download server.<br>
+nvm list [available]         : List the node.js installations. Type “available” at the end to see what can be installed. Aliased as ls.<br>
+nvm on                       : Enable node.js version management.<br>
+nvm off                      : Disable node.js version management.<br>
+nvm proxy [url]              : Set a proxy to use for downloads. Leave [url] blank to see the current proxy.<br>
+Set [url] to “none” to remove the proxy.<br>
+nvm node_mirror [url]        : Set the node mirror. Defaults to <a href="https://nodejs.org/dist/" target="_blank" rel="noopener">https://nodejs.org/dist/</a>. Leave [url] blank to use default url.<br>
+nvm npm_mirror [url]         : Set the npm mirror. Defaults to <a href="https://github.com/npm/cli/archive/" target="_blank" rel="noopener">https://github.com/npm/cli/archive/</a>. Leave [url] blank to default url.<br>
+nvm uninstall <version>      : The version must be a specific version.<br>
+nvm use [version] [arch]     : Switch to use the specified version. Optionally specify 32/64bit architecture.<br>
+nvm use <arch> will continue using the selected version, but switch to 32/64 bit mode.<br>
+nvm root [path]              : Set the directory where nvm should store different versions of node.js.<br>
+If <path></path> is not set, the current root will be displayed.<br>
+nvm version                  : Displays the current running version of nvm for Windows. Aliased as v.</arch></version></version></p>
+</blockquote>
 
                 
 
@@ -276,7 +311,7 @@ Linux环境</p>
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#hexo-简介"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">hexo-&#x7B80;&#x4ECB;</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#基本操作"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">&#x57FA;&#x672C;&#x64CD;&#x4F5C;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#安装git"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">&#x5B89;&#x88C5;git</span></a></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#hexo-简介"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">hexo-&#x7B80;&#x4ECB;</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#基本操作"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">&#x57FA;&#x672C;&#x64CD;&#x4F5C;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#安装git"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">&#x5B89;&#x88C5;git</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#安装nodejs"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">&#x5B89;&#x88C5;nodeJS</span></a></li></ol></li></ol>
         
         </div>
       </aside>
