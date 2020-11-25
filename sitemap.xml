@@ -2,17 +2,17 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <sitemap>
-        <loc>http://yoursite.com/post-sitemap.xml</loc>
-        <lastmod>2020-11-25T04:16:40.430Z</lastmod>
+        <loc>http://www.jiaminghuiblog.com/post-sitemap.xml</loc>
+        <lastmod>2020-11-25T04:26:44.816Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yoursite.com/page-sitemap.xml</loc>
+        <loc>http://www.jiaminghuiblog.com/page-sitemap.xml</loc>
         <lastmod>2019-12-07T10:21:08.663Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yoursite.com/tag-sitemap.xml</loc>
+        <loc>http://www.jiaminghuiblog.com/tag-sitemap.xml</loc>
         <lastmod>2019-12-08T13:51:04.267Z</lastmod>
     </sitemap>
 

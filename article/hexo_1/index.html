@@ -18,7 +18,7 @@
         
     </title>
 
-    <link rel="canonical" href="http://yoursite.com/article/hexo_1/">
+    <link rel="canonical" href="http://www.jiaminghuiblog.com/article/hexo_1/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -217,8 +217,8 @@
 <h1 id="基本操作">基本操作</h1>
 <h2 id="安装git">安装git</h2>
 <p>如果想要把hexo挂在git上，那就需要在本地上传和更新自己的github仓库，也需要git bash的命令窗口。<br>
-Windows环境直接在git官网下载安装。<br>
-Linux环境</p>
+Windows：直接在git官网下载安装。<br>
+Linux：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git  </span><br></pre></td></tr></table></figure>
 <p>首先在需要输入自己的github用户名以及github邮箱</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;  </span><br><span class="line">git config --global user.email &quot;youremail&quot;  </span><br></pre></td></tr></table></figure>
@@ -226,7 +226,7 @@ Linux环境</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name  </span><br><span class="line">git config user.email  </span><br></pre></td></tr></table></figure>
 <p>用户名和邮箱正确之后，需要在本地电脑生成一个key，这样每次登录github就不用输入密码，而且也很安全。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
-<p>输入上诉命令之后，会在用户的目录下生成一个&gt;.ssh 文件夹，里面有两个密钥，后缀是&gt;.pub 的是公钥，需要把公钥中的文字复制到github账号中的设置中去，另外一个是本地私钥，需要自己电脑保留。<br>
+<p>输入上诉命令之后，会在用户的目录下生成一个’.ssh’文件夹，里面有两个密钥，后缀是’&gt;.pub’的是公钥，需要把公钥中的文字复制到github账号中的设置中去，另外一个是本地私钥，需要自己电脑保留。<br>
 下面登录到自己的github。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 <h2 id="安装nodejs">安装nodeJS</h2>
@@ -463,7 +463,7 @@ Linux：</p>
 <script>
     // only load tagcloud.js in tag.html
     if($('#tag_cloud').length !== 0){
-        async("http://yoursite.com/js/jquery.tagcloud.js",function(){
+        async("http://www.jiaminghuiblog.com/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
                 //size: {start: 1, end: 1, unit: 'em'},
                 color: {start: '#bbbbee', end: '#0085a1'},
@@ -528,7 +528,7 @@ Linux：</p>
 	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
     <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
 <!-- Image to hack wechat -->
-<img src="http://yoursite.com/img/icon_wechat.png" width="0" height="0" />
+<img src="http://www.jiaminghuiblog.com/img/icon_wechat.png" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
 </body>
